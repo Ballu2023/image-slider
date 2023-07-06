@@ -1,0 +1,54 @@
+body{
+margin: 0;
+}
+.integer{
+width: 100%;
+position: relative;
+
+}
+.slides img{
+width: 100%;
+height: 400px;
+}
+.arrow{
+position: absolute;
+    background: white;
+    top: 45%;
+    font-size: 40px;
+    padding: 5px 25px;
+    border-radius: 100%;
+}
+.next{
+right: 10px;
+}
+.prew{
+left: 10px;
+}
+.caption{
+position: absolute;
+width: 100%;
+font-size: 50px;
+    color: white;
+    background: black;
+    text-align: center;
+    bottom: 0;
+    padding: 10px;
+    
+
+}
+.slides{
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

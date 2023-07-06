@@ -1,0 +1,80 @@
+<!docktype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>thisis my website</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="integer">
+    <div class="slides">
+        <img src="empty/1.jpg">
+        <div class="caption">caption 1</div>
+        </div>
+    <div class="slides">
+        <img src="empty/2.jpg">
+        <div class="caption">caption 2</div>
+        </div>
+    <div class="slides">
+        <img src="empty/3.jpg">
+        <div class="caption">caption 3</div>
+        </div>
+    <div class="slides">
+        <img src="empty/4.jpg">
+        <div class="caption">caption 4</div>
+        </div>
+        
+    <span class="arrow prew" onclick="control(-1)">&#10094;</span>
+    <span class="arrow next" onclick="control(1)">&#10095;</span>
+        
+    </div>
+    
+<script>
+    let flag = 0;
+    function control(x){
+    flag = flag + x;
+      slideshow(flag); 
+    }
+    slideshow(flag);
+    function slideshow(numb){
+    var text = document.getElementsByClassName("slides")
+    
+    if(numb == text.length){
+    flag = 0;
+    numb = 0;
+    }
+    if(numb < 0){
+        flag = text.length-1;
+        numb = text.length-1; 
+    }
+    for(let y of text){
+    y.style.display = "none";  
+    }
+    text[numb].style.display = "block"; 
+    }
+    
+    
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>
